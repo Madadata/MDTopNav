@@ -1,6 +1,6 @@
 # MDTopNav
-[![npm](https://npmjs.org/package/mdtopnav)]()
-[![DUB](https://david-dm.org/bevry/badges#info=devDependencies)]()
+[![GitHub issues](https://img.shields.io/github/issues/Madadata/MDTopNav.svg)](https://github.com/Madadata/MDTopNav/issues)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Madadata/MDTopNav/master/LICENSE)
 
 # Example
 ![example](https://raw.githubusercontent.com/Madadata/MDTopNav/master/example.png)
