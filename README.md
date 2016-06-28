@@ -4,7 +4,7 @@
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)]()
 
 # Example
-![example](https://github.com/Madadata/MDTopNav/tree/master/example.png)
+![example](https://raw.githubusercontent.com/Madadata/MDTopNav/master/example.png)
 
 # Properties
 
