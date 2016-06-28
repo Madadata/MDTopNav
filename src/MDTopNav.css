@@ -1,0 +1,64 @@
+:root {
+  --height: 43px;
+  --backgroundColor: #000;
+  --textColor: #ddd;
+  --textHoveredColor: #fff;
+  --transitionDuration: 0.3s;
+}
+
+:local .container {
+  background: black;
+  height: var(--height);
+  padding: 0 20px;
+
+  .list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:  center;
+    background: var(--backgroundColor);
+
+    .logo {
+      flex: 0 0 auto;
+      height: var(--height);
+      color: var(--textColor);
+    }
+
+    .logo:hover {
+      cursor: pointer;
+    }
+
+    .items {
+      flex: 0 0 auto;
+      height: var(--height);
+
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .item {
+        color: var(--textColor);
+        margin: 0 30px;
+        list-style: none;
+        text-decoration: none;
+
+        .link {
+          text-decoration: none;
+          color: var(--textColor);
+        }
+
+        .link:hover {
+          color: var(--textHoveredColor);
+          transition: var(--transitionDuration);
+        }
+      }
+
+      .item:hover {
+        cursor: pointer;
+        color: var(--textHoveredColor);
+        transition: var(--transitionDuration);
+      }
+    }
+  }
+}
