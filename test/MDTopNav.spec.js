@@ -2,12 +2,16 @@ import React from 'react';
 import expect from 'expect';
 import expectJSX from 'expect-jsx';
 import { createRenderer } from 'react-addons-test-utils';
-import MdTopNav from 'src/MdTopNav';
+import MDTopNav from 'src/MDTopNav';
 
 expect.extend(expectJSX);
 
-describe('MdTopNav', () => {
+describe('MDTopNav', () => {
   it('should work', () => {
-
-  })
+    const renderer = createRenderer();
+    renderer.render(
+      <MDTopNav />
+    );
+    const actualElement = renderer.getRenderOutput();
+  });
 });
