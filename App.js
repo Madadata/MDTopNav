@@ -14,7 +14,9 @@ const App = () => (
       items={items}
       urls={urls}
       logo={"http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png"}
+      isFixed
     />
+  <div style={{ height: 2000, width: 20, background: 'white' }}></div>
   </div>
 );
 

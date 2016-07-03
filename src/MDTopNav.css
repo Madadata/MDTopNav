@@ -9,6 +9,7 @@
 :local .container {
   background: black;
   height: var(--height);
+  width: 100vw;
   padding: 0 20px;
 
   .list {

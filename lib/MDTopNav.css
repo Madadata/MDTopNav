@@ -1,6 +1,7 @@
 :local .container {
   background: black;
   height: 43px;
+  width: 100vw;
   padding: 0 20px;
 }
 :local .container .list {

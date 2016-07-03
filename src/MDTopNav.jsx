@@ -54,8 +54,9 @@ class MDTopNav extends Component {
   render() {
     const logoJSX = this.getLogo();
     const itemsJSX = this.getItems();
+    const { isFixed } = this.props;
     return (
-      <div className={styles.container}>
+      <div className={styles.container} style={ isFixed ? { position: 'fixed' } : {} }>
         <div className={styles.list}>
           {logoJSX}
           {itemsJSX}
@@ -70,6 +71,7 @@ MDTopNav.propsTypes = {
   logo: PropTypes.String,
   items: PropTypes.arrayOf(PropTypes.String),
   urls: PropTypes.arrayOf(PropTypes.String),
+  isFixed: PropTypes.bool,
 };
 
 export default MDTopNav;
