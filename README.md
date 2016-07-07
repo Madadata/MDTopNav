@@ -1,4 +1,5 @@
 # MDTopNav
+[![Build Status](https://travis-ci.org/Madadata/MDTopNav.svg?branch=master)](https://travis-ci.org/Madadata/MDTopNav)
 [![GitHub version](https://badge.fury.io/gh/Madadata%2FMDTopNav.svg)](https://badge.fury.io/gh/Madadata%2FMDTopNav)
 [![GitHub issues](https://img.shields.io/github/issues/Madadata/MDTopNav.svg)](https://github.com/Madadata/MDTopNav/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Madadata/MDTopNav/master/LICENSE)
