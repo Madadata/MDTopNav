@@ -3,20 +3,16 @@ import styles from './MDTopNav.css';
 import MDlogo from './logo.png';
 
 const zip = rows => rows[0].map(
-  (_, c) => rows.map( row => row[c])
+  (_, c) => rows.map(row => row[c])
 );
 
 class MDTopNav extends Component {
 
-  constructor() {
-    super();
-  }
-
   getLogo() {
     const { logo } = this.props;
     return !!logo ?
-           <img className={styles.logo} src={logo} /> :
-           <img className={styles.logo} src={MDlogo} />;
+      <img alt="logo" className={styles.logo} src={logo} /> :
+      <img alt="logo" className={styles.logo} src={MDlogo} />;
   }
 
   getItems() {
@@ -44,7 +40,7 @@ class MDTopNav extends Component {
               <div className={styles.item} key={i}>
                 <a className={styles.link} href={url}>{item}</a>
               </div>
-            )
+            );
           })
         }
       </div>
@@ -56,7 +52,7 @@ class MDTopNav extends Component {
     const itemsJSX = this.getItems();
     const { isFixed } = this.props;
     return (
-      <div className={styles.container} style={ isFixed ? { position: 'fixed' } : {} }>
+      <div className={styles.container} style={isFixed ? { position: 'fixed' } : {}}>
         <div className={styles.list}>
           {logoJSX}
           {itemsJSX}
@@ -67,7 +63,7 @@ class MDTopNav extends Component {
 
 }
 
-MDTopNav.propsTypes = {
+MDTopNav.propTypes = {
   logo: PropTypes.String,
   items: PropTypes.arrayOf(PropTypes.String),
   urls: PropTypes.arrayOf(PropTypes.String),
