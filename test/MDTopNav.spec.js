@@ -18,7 +18,7 @@ describe('MDTopNav', () => {
     });
 
     it('should have no default props', () => {
-      expect(Object.keys(wrapper.props()).length).toEqual(2);
+      expect(Object.keys(wrapper.props()).length).toEqual(3);
     });
 
     it('should have a default logo', () => {
