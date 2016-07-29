@@ -64,9 +64,9 @@ class MDTopNav extends Component {
 }
 
 MDTopNav.propTypes = {
-  logo: PropTypes.String,
-  items: PropTypes.arrayOf(PropTypes.String),
-  urls: PropTypes.arrayOf(PropTypes.String),
+  logo: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.string),
+  urls: PropTypes.arrayOf(PropTypes.string),
   isFixed: PropTypes.bool,
 };
 
