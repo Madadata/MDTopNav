@@ -1,6 +1,6 @@
 {
   "name": "mdtopnav",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Madadata's top navigation component",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "compile": "npm-run-all --parallel compile:source compile:postcss",
     "compile:postcss": "postcss --use precss --use postcss-cssnext -d lib src/*.css",
     "compile:source": "babel src --out-dir lib",
-    "prepublish": "npm-run-all clean compile",
+    "prepublish": "npm-run-all clean compile copy",
+    "copy": "cp src/logo.png lib/logo.png",
     "clean": "rimraf lib dist",
     "lint": "eslint src/**/*.jsx",
     "test:watch": "mocha --watch",
@@ -20,7 +21,8 @@
   "license": "MIT",
   "config": {
     "ghooks": {
-      "pre-commit": "npm run prepublish"
+      "pre-commit": "npm run prepublish",
+      "pre-push": "npm run clean"
     }
   },
   "devDependencies": {
